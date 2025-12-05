@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Solutions pour sauver nos océans : innovation, législation, restauration">
+<title>Ocean ~ Solutions</title>
+<style>
+:root {
+  --ocean-deep: #001524;
+  --ocean-mid: #15616d;
+  --ocean-light: #78bcc4;
+  --foam: #ffeaa7;
+  --hope: #00b894;
+  --text: #e8f4f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --ocean-deep: #e8f4f8;
+    --ocean-mid: #78bcc4;
+    --text: #001524;
+    --hope: #00b894;
+  }
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 2px solid var(--ocean-light);
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.breadcrumb {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+.breadcrumb a {
+  color: var(--foam);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--foam);
+}
+.breadcrumb a:hover {
+  border-bottom-style: solid;
+}
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem;
+  border-left: 4px solid var(--hope);
+  padding-left: 1rem;
+  font-weight: 400;
+  color: var(--foam);
+}
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.solution-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.solution {
+  background: rgba(0, 184, 148, 0.1);
+  padding: 1.5rem;
+  border-left: 3px solid var(--hope);
+  border-radius: 0 4px 4px 0;
+}
+.solution h3 {
+  color: var(--hope);
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 400;
+}
+.solution p {
+  text-align: left;
+  margin: 0;
+}
+.success-story {
+  background: rgba(255, 234, 167, 0.08);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin: 2rem 0;
+  border-left: 4px solid var(--foam);
+}
+.success-story h3 {
+  color: var(--foam);
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.key-actions {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+.key-actions li {
+  padding: 0.8rem 0 0.8rem 2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.key-actions li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--hope);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+nav {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  text-align: center;
+}
+nav a {
+  color: var(--foam);
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover, nav a:focus {
+  border-bottom-color: var(--foam);
+  outline: 2px solid var(--foam);
+  outline-offset: 4px;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--ocean-light);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.4rem; }
+  nav a { display: block; margin: 0.5rem 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 Solutions pour l'Océan</h1>
+  <p class="breadcrumb"><a href="index.html">← Accueil</a></p>
+</header>
+
+<main>
+  <section>
+    <p>
+      Face à l'urgence océanique, des solutions existent et portent déjà leurs fruits.
+      Innovation technologique, législation protectrice, restauration active et éducation :
+      les voies de la guérison sont multiples et complémentaires.
+    </p>
+  </section>
+
+  <section>
+    <h2>Innovation Technologique</h2>
+
+    <div class="solution-grid">
+      <div class="solution">
+        <h3>Nettoyage des Océans</h3>
+        <p>
+          Des systèmes passifs comme The Ocean Cleanup utilisent les courants marins pour
+          concentrer et collecter les plastiques flottants. Déjà opérationnels dans le
+          Pacifique, ils ont extrait des milliers de tonnes de déchets.
+        </p>
+      </div>
+
+      <div class="solution">
+        <h3>Matériaux Biodégradables</h3>
+        <p>
+          Filets de pêche en polymères biodégradables, emballages à base d'algues,
+          plastiques compostables. Ces alternatives réduisent drastiquement la pollution persistante.
+        </p>
+      </div>
+
+      <div class="solution">
+        <h3>Aquaculture Régénérative</h3>
+        <p>
+          Fermes marines tridimensionnelles cultivant algues, moules et poissons en symbiose.
+          Elles filtrent l'eau, captent le carbone et produisent des protéines sans épuiser les stocks sauvages.
+        </p>
+      </div>
+
+      <div class="solution">
+        <h3>Surveillance par IA</h3>
+        <p>
+          Satellites, drones et intelligence artificielle détectent la pêche illégale,
+          suivent les populations de cétacés et identifient les zones de pollution en temps réel.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Protection Légale</h2>
+
+    <ul class="key-actions">
+      <li>
+        <strong>Aires Marines Protégées (AMP)</strong> : Sanctuaires où la pêche et l'exploitation
+        sont interdites ou strictement régulées. Objectif ONU : 30% des océans protégés d'ici 2030.
+      </li>
+      <li>
+        <strong>Interdiction du plastique à usage unique</strong> : De plus en plus de pays bannissent
+        sacs, pailles et emballages jetables, réduisant la pollution à la source.
+      </li>
+      <li>
+        <strong>Quotas de pêche scientifiques</strong> : Limitation des captures basée sur
+        les données biologiques pour permettre la régénération des stocks.
+      </li>
+      <li>
+        <strong>Traité de Haute Mer</strong> : Accord international historique (2023) pour protéger
+        la biodiversité dans les eaux internationales (60% des océans).
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Restauration Active</h2>
+
+    <div class="solution-grid">
+      <div class="solution">
+        <h3>Régénération Corallienne</h3>
+        <p>
+          Pépinières de coraux, transplantation de fragments, sélection de souches résistantes
+          à la chaleur. Des récifs entiers renaissent grâce à ces techniques.
+        </p>
+      </div>
+
+      <div class="solution">
+        <h3>Replantation de Mangroves</h3>
+        <p>
+          Les mangroves protègent les côtes, filtrent l'eau et servent de nurseries.
+          Des millions d'hectares sont replantés en Asie, Afrique et Amérique latine.
+        </p>
+      </div>
+
+      <div class="solution">
+        <h3>Réensemencement d'Herbiers</h3>
+        <p>
+          Les prairies sous-marines (posidonies, zostères) capturent 10 fois plus de CO2
+          que les forêts terrestres. Leur restauration combat le changement climatique.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="success-story">
+      <h3>Histoire de Succès : La Réserve de Cabo Pulmo (Mexique)</h3>
+      <p>
+        Ancienne zone de pêche effondrée, transformée en réserve marine en 1995.
+        Résultat : biomasse de poissons multipliée par 5 en 10 ans, retour des requins et raies,
+        économie locale prospère grâce à l'écotourisme. Preuve que la protection fonctionne.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Éducation et Sensibilisation</h2>
+
+    <p>
+      La transformation des mentalités est la solution la plus puissante à long terme.
+      Programmes scolaires sur les océans, documentaires (Blue Planet, Seaspiracy),
+      sciences participatives, mouvements citoyens : la conscience collective évolue rapidement.
+    </p>
+
+    <p>
+      Chaque personne informée devient un ambassadeur des océans, influençant ses choix de
+      consommation, son vote et son entourage. L'effet multiplicateur est immense.
+    </p>
+  </section>
+
+  <section>
+    <p style="text-align: center; font-size: 1.1rem; margin: 2rem 0; font-style: italic;">
+      Ces solutions fonctionnent. Ensemble, elles peuvent inverser la tendance.<br>
+      Mais elles nécessitent l'engagement de chacun.
+    </p>
+  </section>
+
+  <nav role="navigation" aria-label="Navigation entre pages">
+    <a href="crise.html">← Crise</a>
+    <a href="index.html">Accueil</a>
+    <a href="agir.html">Agir →</a>
+  </nav>
+</main>
+
+<footer>
+  <p>
+    Site éco-conçu · Page < 10KB · Navigation clavier · Terminal-friendly
+  </p>
+</footer>
+
+</body>
+</html>

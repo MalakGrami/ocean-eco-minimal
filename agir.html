@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Agir pour les océans : gestes concrets au quotidien">
+<title>Ocean ~ Agir Maintenant</title>
+<style>
+:root {
+  --ocean-deep: #001524;
+  --ocean-mid: #15616d;
+  --ocean-light: #78bcc4;
+  --foam: #ffeaa7;
+  --action: #fd79a8;
+  --text: #e8f4f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --ocean-deep: #e8f4f8;
+    --ocean-mid: #78bcc4;
+    --text: #001524;
+    --action: #e84393;
+  }
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 2px solid var(--ocean-light);
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.breadcrumb {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+.breadcrumb a {
+  color: var(--foam);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--foam);
+}
+.breadcrumb a:hover {
+  border-bottom-style: solid;
+}
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem;
+  border-left: 4px solid var(--action);
+  padding-left: 1rem;
+  font-weight: 400;
+  color: var(--foam);
+}
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.action-category {
+  margin: 2rem 0;
+  background: rgba(253, 121, 168, 0.08);
+  padding: 1.5rem;
+  border-radius: 4px;
+  border-left: 3px solid var(--action);
+}
+.action-category h3 {
+  color: var(--action);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+.action-list {
+  list-style: none;
+  margin: 1rem 0;
+}
+.action-list li {
+  padding: 0.7rem 0 0.7rem 2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+.action-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--action);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.impact-level {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--foam);
+  font-weight: bold;
+}
+.cta-box {
+  background: rgba(255, 234, 167, 0.12);
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2.5rem 0;
+  border: 2px solid var(--foam);
+  text-align: center;
+}
+.cta-box h3 {
+  color: var(--foam);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cta-box p {
+  text-align: center;
+  margin-bottom: 0;
+}
+.resources {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+.resources h3 {
+  color: var(--ocean-light);
+  margin-bottom: 1rem;
+}
+.resources a {
+  color: var(--foam);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--foam);
+}
+.resources a:hover, .resources a:focus {
+  border-bottom-style: solid;
+  outline: 2px solid var(--foam);
+  outline-offset: 2px;
+}
+nav {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  text-align: center;
+}
+nav a {
+  color: var(--foam);
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover, nav a:focus {
+  border-bottom-color: var(--foam);
+  outline: 2px solid var(--foam);
+  outline-offset: 4px;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--ocean-light);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.4rem; }
+  nav a { display: block; margin: 0.5rem 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 Agir pour l'Océan</h1>
+  <p class="breadcrumb"><a href="index.html">← Accueil</a></p>
+</header>
+
+<main>
+  <section>
+    <p>
+      Vous n'avez pas besoin d'être scientifique, politique ou milliardaire pour protéger les océans.
+      Chaque geste compte. Chaque choix influence le système. Ensemble, nos actions individuelles
+      créent une vague de changement irrésistible.
+    </p>
+  </section>
+
+  <div class="cta-box">
+    <h3>Le Pouvoir de l'Action Individuelle</h3>
+    <p>
+      Si 1% de la population mondiale adoptait ces gestes, l'impact équivaudrait à retirer
+      80 millions de voitures de la circulation ou planter 2 milliards d'arbres.
+    </p>
+  </div>
+
+  <section>
+    <h2>Au Quotidien</h2>
+
+    <div class="action-category">
+      <h3>🛒 Consommation Responsable</h3>
+      <ul class="action-list">
+        <li>
+          Refuser le plastique à usage unique (sacs, bouteilles, pailles)
+          <span class="impact-level">Impact élevé</span>
+        </li>
+        <li>
+          Choisir des produits de la mer certifiés MSC ou ASC (pêche durable)
+          <span class="impact-level">Impact élevé</span>
+        </li>
+        <li>
+          Privilégier les cosmétiques sans microplastiques
+        </li>
+        <li>
+          Acheter en vrac pour réduire les emballages
+        </li>
+        <li>
+          Opter pour des détergents biodégradables
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-category">
+      <h3>🍽️ Alimentation</h3>
+      <ul class="action-list">
+        <li>
+          Réduire la consommation de poisson (2 fois/semaine max)
+          <span class="impact-level">Impact élevé</span>
+        </li>
+        <li>
+          Éviter thon rouge, espadon, requins (espèces menacées)
+        </li>
+        <li>
+          Privilégier les petits poissons (sardines, maquereaux)
+        </li>
+        <li>
+          Découvrir les algues comme alternative protéinée
+        </li>
+        <li>
+          Choisir des fruits de mer locaux et de saison
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-category">
+      <h3>🏠 À la Maison</h3>
+      <ul class="action-list">
+        <li>
+          Ne jamais jeter de produits chimiques dans les éviers/toilettes
+        </li>
+        <li>
+          Installer des filtres à microplastiques sur la machine à laver
+        </li>
+        <li>
+          Récupérer l'eau de pluie pour arroser
+        </li>
+        <li>
+          Réduire sa consommation d'énergie (moins de CO2 = océans moins acides)
+          <span class="impact-level">Impact élevé</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>S'Engager</h2>
+
+    <div class="action-category">
+      <h3>🤝 Actions Collectives</h3>
+      <ul class="action-list">
+        <li>
+          Participer aux nettoyages de plages et rivières
+        </li>
+        <li>
+          Rejoindre une association locale de protection marine
+        </li>
+        <li>
+          Signer les pétitions pour la création d'aires marines protégées
+        </li>
+        <li>
+          Participer à des programmes de sciences participatives
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-category">
+      <h3>💰 Soutien Financier</h3>
+      <ul class="action-list">
+        <li>
+          Donner à des ONG reconnues (Sea Shepherd, Surfrider, Oceana)
+        </li>
+        <li>
+          Parrainer un corail ou une zone de mangrove
+        </li>
+        <li>
+          Investir dans des entreprises d'économie bleue durable
+        </li>
+      </ul>
+    </div>
+
+    <div class="action-category">
+      <h3>📢 Sensibilisation</h3>
+      <ul class="action-list">
+        <li>
+          Partager des informations sur les réseaux sociaux
+          <span class="impact-level">Impact élevé</span>
+        </li>
+        <li>
+          Éduquer les enfants aux enjeux océaniques
+        </li>
+        <li>
+          Organiser des projections de documentaires
+        </li>
+        <li>
+          Influencer les décisions de votre entreprise/école
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Citoyen Actif</h2>
+
+    <ul class="action-list">
+      <li>
+        Voter pour des candidats avec des programmes environnementaux ambitieux
+        <span class="impact-level">Impact élevé</span>
+      </li>
+      <li>
+        Contacter vos élus pour réclamer plus de protection marine
+      </li>
+      <li>
+        Boycotter les entreprises polluantes
+      </li>
+      <li>
+        Soutenir les référendums pour l'environnement
+      </li>
+    </ul>
+  </section>
+
+  <div class="cta-box">
+    <h3>Commencez Aujourd'hui</h3>
+    <p>
+      Choisissez 3 actions dans cette liste. Mettez-les en pratique cette semaine.<br>
+      Dans un mois, ajoutez-en 3 de plus. Le changement se construit pas à pas.
+    </p>
+  </div>
+
+  <section class="resources">
+    <h3>Ressources Utiles</h3>
+    <p>
+      <strong>Applications :</strong> Ocean's Zero (alternatives sans plastique),
+      Good Fish (guide des poissons durables), Beat the Micro Bead (détecter les microplastiques)
+    </p>
+    <p>
+      <strong>Certifications :</strong> MSC (Marine Stewardship Council), ASC (Aquaculture Stewardship Council),
+      Friend of the Sea
+    </p>
+    <p>
+      <strong>Organisations :</strong>
+      <a href="https://www.seashepherd.org/" rel="noopener">Sea Shepherd</a>,
+      <a href="https://www.surfrider.eu/" rel="noopener">Surfrider Foundation</a>,
+      <a href="https://oceana.org/" rel="noopener">Oceana</a>,
+      <a href="https://www.ocean-climate.org/" rel="noopener">Ocean & Climate Platform</a>
+    </p>
+  </section>
+
+  <section>
+    <p style="text-align: center; font-size: 1.1rem; margin: 2rem 0; font-style: italic;">
+      "Nous n'héritons pas de la Terre de nos ancêtres,<br>
+      nous l'empruntons à nos enfants."
+    </p>
+  </section>
+
+  <nav role="navigation" aria-label="Navigation entre pages">
+    <a href="solutions.html">← Solutions</a>
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos →</a>
+  </nav>
+</main>
+
+<footer>
+  <p>
+    Site éco-conçu · Page < 12KB · Navigation clavier · Terminal-friendly
+  </p>
+</footer>
+
+</body>
+</html>

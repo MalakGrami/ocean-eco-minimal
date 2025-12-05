@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="L'état critique des océans : pollution, surpêche, réchauffement climatique">
+<title>Ocean ~ La Crise</title>
+<style>
+:root {
+  --ocean-deep: #001524;
+  --ocean-mid: #15616d;
+  --ocean-light: #78bcc4;
+  --foam: #ffeaa7;
+  --alert: #ff6b6b;
+  --text: #e8f4f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --ocean-deep: #e8f4f8;
+    --ocean-mid: #78bcc4;
+    --text: #001524;
+    --alert: #d63031;
+  }
+}
+header {
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 2px solid var(--ocean-light);
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.breadcrumb {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-top: 1rem;
+}
+.breadcrumb a {
+  color: var(--foam);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--foam);
+}
+.breadcrumb a:hover {
+  border-bottom-style: solid;
+}
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+h2 {
+  font-size: 1.8rem;
+  margin: 2.5rem 0 1rem;
+  border-left: 4px solid var(--alert);
+  padding-left: 1rem;
+  font-weight: 400;
+  color: var(--foam);
+}
+p {
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+.stats {
+  display: grid;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.stat {
+  background: rgba(255, 107, 107, 0.1);
+  padding: 1.5rem;
+  border-left: 3px solid var(--alert);
+  border-radius: 0 4px 4px 0;
+}
+.stat-number {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: var(--alert);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.stat-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.threat-list {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+.threat-list li {
+  padding: 1rem 1rem 1rem 3rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+  position: relative;
+}
+.threat-list li::before {
+  content: "⚠";
+  position: absolute;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: var(--alert);
+}
+.threat-list strong {
+  display: block;
+  color: var(--foam);
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+nav {
+  margin: 3rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  text-align: center;
+}
+nav a {
+  color: var(--foam);
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover, nav a:focus {
+  border-bottom-color: var(--foam);
+  outline: 2px solid var(--foam);
+  outline-offset: 4px;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--ocean-light);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.4rem; }
+  .stat-number { font-size: 2rem; }
+  nav a { display: block; margin: 0.5rem 0; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 La Crise Océanique</h1>
+  <p class="breadcrumb"><a href="index.html">← Accueil</a></p>
+</header>
+
+<main>
+  <section>
+    <p>
+      Nos océans, qui couvrent 71% de la surface de notre planète et produisent plus de 50% de l'oxygène
+      que nous respirons, sont aujourd'hui en état d'urgence critique. Le pillage systématique de leurs
+      ressources et la pollution massive menacent l'équilibre fragile de la vie marine.
+    </p>
+  </section>
+
+  <section>
+    <h2>Les Chiffres qui Alertent</h2>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number">8 millions</span>
+        <div class="stat-desc">
+          de tonnes de plastique déversées dans les océans chaque année.
+          L'équivalent d'un camion-poubelle vidé chaque minute.
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">90%</span>
+        <div class="stat-desc">
+          des stocks de poissons mondiaux sont surexploités ou pleinement exploités.
+          La pêche industrielle vide les océans plus vite qu'ils ne se régénèrent.
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">50%</span>
+        <div class="stat-desc">
+          des récifs coralliens ont disparu depuis 1950.
+          Ces "forêts tropicales de la mer" abritent 25% de la vie marine.
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">+26%</span>
+        <div class="stat-desc">
+          d'acidité océanique depuis le début de l'ère industrielle.
+          L'absorption du CO2 transforme la chimie même de l'eau de mer.
+        </div>
+      </div>
+
+      <div class="stat">
+        <span class="stat-number">500</span>
+        <div class="stat-desc">
+          zones mortes dépourvues d'oxygène à travers le monde.
+          La pollution par nutriments crée des déserts marins.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Les Menaces Principales</h2>
+
+    <ul class="threat-list">
+      <li>
+        <strong>Pollution Plastique</strong>
+        Microplastiques dans toute la chaîne alimentaire, îles de déchets de la taille de pays entiers,
+        animaux marins piégés ou étouffés. Le plastique persiste des siècles dans l'environnement.
+      </li>
+
+      <li>
+        <strong>Surpêche Industrielle</strong>
+        Chalutiers géants qui raclent les fonds marins, prises accessoires massives, effondrement
+        des populations de thons, requins et autres grands prédateurs essentiels à l'équilibre.
+      </li>
+
+      <li>
+        <strong>Réchauffement Climatique</strong>
+        Blanchissement des coraux, migration forcée des espèces, intensification des tempêtes,
+        montée du niveau des mers. Les océans absorbent 90% de la chaleur excédentaire.
+      </li>
+
+      <li>
+        <strong>Acidification</strong>
+        La dissolution du CO2 dans l'eau crée de l'acide carbonique. Les coquilles et squelettes
+        calcaires se dissolvent, menaçant mollusques, coraux et plancton.
+      </li>
+
+      <li>
+        <strong>Pollution Chimique</strong>
+        Pesticides, métaux lourds, hydrocarbures, médicaments. Ces substances toxiques
+        s'accumulent dans les tissus vivants et remontent la chaîne alimentaire.
+      </li>
+
+      <li>
+        <strong>Destruction d'Habitats</strong>
+        Dragage, construction côtière, destruction des mangroves et herbiers marins.
+        Les nurseries naturelles disparaissent au profit de l'urbanisation.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <p style="text-align: center; font-size: 1.1rem; margin: 2rem 0; font-style: italic;">
+      Face à cette urgence, l'action est possible et nécessaire.<br>
+      Il existe des solutions concrètes et efficaces.
+    </p>
+  </section>
+
+  <nav role="navigation" aria-label="Navigation entre pages">
+    <a href="index.html">← Accueil</a>
+    <a href="solutions.html">Solutions →</a>
+    <a href="agir.html">Agir</a>
+  </nav>
+</main>
+
+<footer>
+  <p>
+    Site éco-conçu · Page < 10KB · Navigation clavier · Terminal-friendly
+  </p>
+</footer>
+
+</body>
+</html>

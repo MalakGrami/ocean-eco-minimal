@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Protégeons nos océans - Un site éco-conçu pour sensibiliser à la conservation marine">
+<title>Ocean ~ Accueil</title>
+<style>
+:root {
+  --ocean-deep: #001524;
+  --ocean-mid: #15616d;
+  --ocean-light: #78bcc4;
+  --foam: #ffeaa7;
+  --text: #e8f4f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Georgia, serif;
+  background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-mid) 100%);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --ocean-deep: #e8f4f8;
+    --ocean-mid: #78bcc4;
+    --text: #001524;
+  }
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  border-bottom: 2px solid var(--ocean-light);
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+.intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  line-height: 1.8;
+}
+.page-nav {
+  display: grid;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+.nav-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-left: 4px solid var(--foam);
+  border-radius: 0 8px 8px 0;
+  transition: all 0.2s;
+}
+.nav-card:hover, .nav-card:focus-within {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(8px);
+}
+.nav-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--foam);
+  font-weight: 400;
+}
+.nav-card p {
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+.nav-card a {
+  color: var(--foam);
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid var(--foam);
+  padding-bottom: 2px;
+}
+.nav-card a:hover, .nav-card a:focus {
+  border-bottom-style: solid;
+  outline: 2px solid var(--foam);
+  outline-offset: 4px;
+}
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+  font-size: 0.7rem;
+  opacity: 0.6;
+  text-align: center;
+  margin: 2rem 0;
+}
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+  border-top: 1px solid var(--ocean-light);
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.wave {
+  opacity: 0.5;
+}
+@media (max-width: 600px) {
+  h1 { font-size: 2rem; }
+  .intro { font-size: 1rem; }
+  .nav-card h2 { font-size: 1.4rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌊 OCEAN</h1>
+  <p class="tagline">Gardiens des Mers · Protecteurs du Bleu</p>
+</header>
+
+<main>
+  <div class="ascii-art" aria-hidden="true">
+    ~  ~  ~  ~  ~  ~  ~  ~  ~  ~  ~  ~
+   ~   ~   ~   ~   ~   ~   ~   ~   ~   ~
+  ~  ~  ~  ~  ~  ~  ~  ~  ~  ~  ~  ~
+  </div>
+
+  <p class="intro">
+    Nos océans sont en péril. Mais ensemble, nous pouvons agir.<br>
+    Découvrez les enjeux, les solutions et comment faire la différence.
+  </p>
+
+  <nav class="page-nav" role="navigation" aria-label="Pages principales">
+    <article class="nav-card">
+      <h2>La Crise</h2>
+      <p>
+        Pollution plastique, surpêche, réchauffement climatique : découvrez l'état critique de nos océans
+        et les chiffres qui alertent.
+      </p>
+      <a href="crise.html" accesskey="c">Explorer la crise →</a>
+    </article>
+
+    <article class="nav-card">
+      <h2>Les Solutions</h2>
+      <p>
+        Innovation, législation, éducation : les voies de la restauration océanique sont multiples
+        et porteuses d'espoir.
+      </p>
+      <a href="solutions.html" accesskey="s">Découvrir les solutions →</a>
+    </article>
+
+    <article class="nav-card">
+      <h2>Agir Maintenant</h2>
+      <p>
+        Des gestes concrets, à votre portée, pour protéger les océans au quotidien.
+        Chaque action compte.
+      </p>
+      <a href="agir.html" accesskey="a">Passer à l'action →</a>
+    </article>
+
+    <article class="nav-card">
+      <h2>À Propos</h2>
+      <p>
+        Découvrez comment ce site applique les principes d'éco-conception web
+        inspirés du protocole Gemini.
+      </p>
+      <a href="apropos.html">En savoir plus →</a>
+    </article>
+  </nav>
+</main>
+
+<footer>
+  <p>
+    Site éco-conçu · Chaque page < 50KB · Navigation clavier · Terminal-friendly
+  </p>
+  <p class="wave">~ ~ ~ ~ ~ ~ ~ ~ ~</p>
+</footer>
+
+</body>
+</html>
