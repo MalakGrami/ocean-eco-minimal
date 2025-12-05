@@ -38,15 +38,13 @@ git init
 git add .
 git commit -m "Initial commit - Ocean eco-site"
 git branch -M main
-git remote add origin https://github.com/VOTRE-USERNAME/ocean-eco-minimal.git
+git remote add origin https://github.com/..
 git push -u origin main
 ```
 
 Puis activez GitHub Pages dans les paramètres du repo (Settings > Pages > Source: main branch)
 
-### Option 2: Netlify Drop
 
-Glissez-déposez le dossier sur [https://app.netlify.com/drop](https://app.netlify.com/drop)
 
 ### Option 3: Vercel
 
@@ -103,10 +101,4 @@ npx pa11y index.html
 - Zéro framework
 - Zéro dépendance externe
 
-## Impact Environnemental
 
-Ce site consomme environ **0.01g de CO2** par visite (vs 1.76g pour un site moyen), soit une réduction de **99.4%** de l'empreinte carbone.
-
-## Licence
-
-Domaine public - Utilisez et modifiez librement
